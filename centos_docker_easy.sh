@@ -12,3 +12,15 @@ sudo yum install -y docker
 sudo systemctl start docker
 sudo systemctl enable docker
 sudo systemctl status docker
+
+
+## Installing docker-compose
+
+# downloading docker compose
+sudo curl -L "https://github.com/docker/compose/releases/download/1.24.1/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+#change file permissions
+sudo chmod +x /usr/local/bin/docker-compose
+# verify docker-compose version
+docker-compose --version
+
+
